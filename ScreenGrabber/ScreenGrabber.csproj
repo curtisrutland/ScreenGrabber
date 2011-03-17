@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEAAC990-E50B-4C30-8B40-EFE007533C55}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScreenGrabber</RootNamespace>
+    <AssemblyName>ScreenGrabber</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaptureAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaptureAreaForm.Designer.cs">
+      <DependentUpon>CaptureAreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrosshairsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CrosshairsControl.Designer.cs">
+      <DependentUpon>CrosshairsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="GDI32.cs" />
+    <Compile Include="ImgurResponseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImgurResponseControl.Designer.cs">
+      <DependentUpon>ImgurResponseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImgurResponseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImgurResponseForm.Designer.cs">
+      <DependentUpon>ImgurResponseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalHotkey.cs" />
+    <Compile Include="ImgurUploader.cs" />
+    <Compile Include="PreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreviewForm.Designer.cs">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectAreaForm.Designer.cs">
+      <DependentUpon>SelectAreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenCapture.cs" />
+    <Compile Include="StandaloneUploaderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StandaloneUploaderControl.Designer.cs">
+      <DependentUpon>StandaloneUploaderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandaloneUploaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandaloneUploaderForm.Designer.cs">
+      <DependentUpon>StandaloneUploaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User32.cs" />
+    <Compile Include="Utilities.cs" />
+    <EmbeddedResource Include="CaptureAreaForm.resx">
+      <DependentUpon>CaptureAreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrosshairsControl.resx">
+      <DependentUpon>CrosshairsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImgurResponseControl.resx">
+      <DependentUpon>ImgurResponseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviewForm.resx">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SelectAreaForm.resx">
+      <DependentUpon>SelectAreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandaloneUploaderControl.resx">
+      <DependentUpon>StandaloneUploaderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandaloneUploaderForm.resx">
+      <DependentUpon>StandaloneUploaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\zoomout.png" />
+    <None Include="Resources\zoomin.png" />
+    <None Include="Resources\upload-small.png" />
+    <None Include="Resources\download-small.png" />
+    <Content Include="Resources\upload.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

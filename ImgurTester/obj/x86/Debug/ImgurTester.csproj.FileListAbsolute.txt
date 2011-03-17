@@ -1,0 +1,10 @@
+C:\WorkSpaces\MyLocal\Visual Studio 2010\Projects\ScreenGrab\ImgurTester\bin\Debug\ImgurTester.exe
+C:\WorkSpaces\MyLocal\Visual Studio 2010\Projects\ScreenGrab\ImgurTester\bin\Debug\ImgurTester.pdb
+C:\WorkSpaces\MyLocal\Visual Studio 2010\Projects\ScreenGrab\ImgurTester\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\WorkSpaces\MyLocal\Visual Studio 2010\Projects\ScreenGrab\ImgurTester\obj\x86\Debug\ImgurTester.exe
+C:\WorkSpaces\MyLocal\Visual Studio 2010\Projects\ScreenGrab\ImgurTester\obj\x86\Debug\ImgurTester.pdb
+C:\My Dropbox\Projects\ScreenGrab\ImgurTester\bin\Debug\ImgurTester.exe
+C:\My Dropbox\Projects\ScreenGrab\ImgurTester\bin\Debug\ImgurTester.pdb
+C:\My Dropbox\Projects\ScreenGrab\ImgurTester\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\My Dropbox\Projects\ScreenGrab\ImgurTester\obj\x86\Debug\ImgurTester.exe
+C:\My Dropbox\Projects\ScreenGrab\ImgurTester\obj\x86\Debug\ImgurTester.pdb
