@@ -1,4 +1,16 @@
-*/*/bin
-*/*/obj
-*.user
+# Visual Studio Ignores
+bin/
+obj/
 *.suo
+*.user
+*.cache
+*.Cache
+*.ncb
+*.snk
+*.pfx
+# Misc Ignores
+Thumbs.db
+dat/
+cap/
+temp/
+tmp/
