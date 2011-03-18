@@ -45,9 +45,9 @@ namespace ScreenGrabber {
             uploading = true;
             queue = uploaderControls.ToQueue();
             for (int i = 0; i < MAX_ACTIVE_UPLOADS; i++) {
-                if (!queue.Any())
-                    break;
                 lock (locker) {
+                    if (!queue.Any())
+                        break;
                     BeginUpload(queue.Dequeue());
                 }
             }
@@ -60,13 +60,13 @@ namespace ScreenGrabber {
 
         void uc_UploadCompleted(object sender, EventArgs e) {
             (sender as StandaloneUploaderControl).UploadCompleted -= new EventHandler<EventArgs>(uc_UploadCompleted);
-            if (queue.Any()) {
-                lock (locker) {
+            lock (locker) {
+                if (queue.Any()) {                
                     BeginUpload(queue.Dequeue());
                 }
-            }
-            else {
-                uploading = false;
+                else {
+                    uploading = false;
+                }
             }
         }
 
