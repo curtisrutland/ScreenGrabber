@@ -10,8 +10,7 @@ using System.Windows.Forms;
 namespace ScreenGrabber {
     public partial class CaptureAreaForm : Form {
 
-        public Point SelectAreaOrigin { get; set; }
-        public Size SelectAreaSize { get; set; }
+        public Image ImageResult { get; set; }
 
         private bool isDragging = false;
         private Point clickPos;
@@ -140,8 +139,11 @@ namespace ScreenGrabber {
         }
 
         private void AreaSelected(Point start, Size size) {
-            SelectAreaOrigin = start;
-            SelectAreaSize = size;
+            Bitmap res = new Bitmap(size.Width, size.Height);
+            var rect = new Rectangle(start, size);
+            using (var g = Graphics.FromImage(res))
+                g.DrawImage(img, 0, 0, rect, GraphicsUnit.Pixel);
+            ImageResult = res;
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

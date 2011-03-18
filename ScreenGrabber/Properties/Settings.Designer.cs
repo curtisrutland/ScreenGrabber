@@ -64,5 +64,53 @@ namespace ScreenGrabber.Properties {
                 this["AutoUpload"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("50")]
+        public int ResponsesToKeep {
+            get {
+                return ((int)(this["ResponsesToKeep"]));
+            }
+            set {
+                this["ResponsesToKeep"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ImgurUploadLog.txt")]
+        public string LogFileNameSuffix {
+            get {
+                return ((string)(this["LogFileNameSuffix"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\/:*?\"<>|")]
+        public string InvalidPathCharacters {
+            get {
+                return ((string)(this["InvalidPathCharacters"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("yyyy-MM-dd HH:mm:ss")]
+        public string LongDateFormat {
+            get {
+                return ((string)(this["LongDateFormat"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("MMM d hh:mm:ss tt")]
+        public string ShortDateFormat {
+            get {
+                return ((string)(this["ShortDateFormat"]));
+            }
+        }
     }
 }

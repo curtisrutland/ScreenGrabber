@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("ScreenGrabber")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("SSFCU")]
+[assembly: AssemblyCompany("insertAlias.com")]
 [assembly: AssemblyProduct("ScreenGrabber")]
-[assembly: AssemblyCopyright("Copyright © SSFCU 2010")]
+[assembly: AssemblyCopyright("Copyright © insertAlias.com 2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -14,5 +14,20 @@
     <Setting Name="AutoUpload" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="ResponsesToKeep" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="LogFileNameSuffix" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ImgurUploadLog.txt</Value>
+    </Setting>
+    <Setting Name="InvalidPathCharacters" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\/:*?"&lt;&gt;|</Value>
+    </Setting>
+    <Setting Name="LongDateFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">yyyy-MM-dd HH:mm:ss</Value>
+    </Setting>
+    <Setting Name="ShortDateFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MMM d hh:mm:ss tt</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

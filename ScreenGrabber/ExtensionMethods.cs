@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ScreenGrabber {
     public static class ExtensionMethods {
@@ -35,6 +36,18 @@ namespace ScreenGrabber {
             foreach (var t in list)
                 queue.Enqueue(t);
             return queue;
+        }
+
+        public static string RemoveAll(this string s, IEnumerable<char> chars) {
+            foreach(var c in chars)
+                s = s.Replace(c.ToString(), "");
+            return s;
+        }
+
+        public static string RemoveAll(this string s, IEnumerable<string> strings) {
+            foreach (var r in strings)
+                s = s.Replace(r, string.Empty);
+            return s;
         }
     }
 }

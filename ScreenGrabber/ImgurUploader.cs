@@ -48,6 +48,7 @@ namespace ScreenGrabber {
             XElement xml;
             try {
                 xml = XElement.Parse(Encoding.UTF8.GetString(data));
+                res.ResponseTime = DateTime.Now;
                 res.DeleteLink = xml.Element("links").Element("delete_page").Value;
                 res.DirectLink = xml.Element("links").Element("original").Value;
                 res.ImgurPage = xml.Element("links").Element("imgur_page").Value;
@@ -57,6 +58,7 @@ namespace ScreenGrabber {
             catch (Exception exc) {
                 res.Exception = exc;
             }
+            ResponseLog.AddResponse(res);
             return res;
         }
     }
@@ -69,5 +71,7 @@ namespace ScreenGrabber {
         public string LargeThumb { get; set; }
 
         public Exception Exception { get; set; }
+
+        public DateTime ResponseTime { get; set; }
     }
 }

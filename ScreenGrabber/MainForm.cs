@@ -66,25 +66,9 @@ namespace ScreenGrabber {
             var img = ScreenCapture.CaptureFullScreen();
             CaptureAreaForm caf = new CaptureAreaForm(img);
             if (caf.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
-                var ss = ScreenCapture.CaptureRange(caf.SelectAreaOrigin, caf.SelectAreaSize);
-                Preview(ss);
+                Preview(caf.ImageResult);
             }
         }
-
-        //private void CaptureRange() {
-        //    SelectAreaForm rf = new SelectAreaForm();
-        //    FormClosedEventHandler d = null;
-        //    d = (s, e) => {
-        //        rf.FormClosed -= d;
-        //        var form = s as SelectAreaForm;
-        //        if (form.DialogResult == DialogResult.OK) {
-        //            var ss = ScreenCapture.Capture(CaptureType.Range, origin: form.Origin, size: form.SelectedSize);
-        //            Preview(ss);
-        //        }
-        //    };
-        //    rf.FormClosed += d;
-        //    rf.Show();
-        //}
 
         private void CaptureActiveWindow() {
             var ss = ScreenCapture.Capture(CaptureType.Window, handle: User32.GetForegroundWindow());
@@ -151,54 +135,8 @@ namespace ScreenGrabber {
             clipboardItem.Enabled = Clipboard.ContainsImage();
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        private void recentUploadsItem_Click(object sender, EventArgs e) {
+            ResponseLog.ShowLogs();
+        }
     }
 }

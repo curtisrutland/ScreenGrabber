@@ -34,8 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
+    <ApplicationIcon>upload.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -64,12 +63,6 @@
     <Compile Include="ImgurResponseControl.Designer.cs">
       <DependentUpon>ImgurResponseControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ImgurResponseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ImgurResponseForm.Designer.cs">
-      <DependentUpon>ImgurResponseForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +79,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseLog.cs" />
+    <Compile Include="ResponseLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResponseLogForm.Designer.cs">
+      <DependentUpon>ResponseLogForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelectAreaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +129,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ResponseLogForm.resx">
+      <DependentUpon>ResponseLogForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SelectAreaForm.resx">
       <DependentUpon>SelectAreaForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +154,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="upload.ico" />
     <None Include="Resources\zoomout.png" />
     <None Include="Resources\zoomin.png" />
     <None Include="Resources\upload-small.png" />
