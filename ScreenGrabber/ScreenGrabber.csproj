@@ -56,12 +56,6 @@
     <Compile Include="CaptureAreaForm.Designer.cs">
       <DependentUpon>CaptureAreaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CrosshairsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CrosshairsControl.Designer.cs">
-      <DependentUpon>CrosshairsControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="GDI32.cs" />
     <Compile Include="ImgurResponseControl.cs">
@@ -115,9 +109,6 @@
     <Compile Include="Utilities.cs" />
     <EmbeddedResource Include="CaptureAreaForm.resx">
       <DependentUpon>CaptureAreaForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CrosshairsControl.resx">
-      <DependentUpon>CrosshairsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImgurResponseControl.resx">
       <DependentUpon>ImgurResponseControl.cs</DependentUpon>

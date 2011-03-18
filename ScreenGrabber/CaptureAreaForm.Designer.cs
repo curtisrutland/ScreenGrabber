@@ -33,8 +33,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CaptureAreaForm";
             this.Text = "CaptureAreaForm";
+            this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CaptureAreaForm_FormClosing);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.CaptureAreaForm_KeyUp);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CaptureAreaForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CaptureAreaForm_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.CaptureAreaForm_MouseUp);
             this.ResumeLayout(false);
 
         }

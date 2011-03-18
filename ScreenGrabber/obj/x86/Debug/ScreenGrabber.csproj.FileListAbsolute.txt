@@ -31,4 +31,3 @@ C:\My Dropbox\Projects\ScreenGrab\ScreenGrabber\bin\Debug\ScreenGrabber.pdb
 C:\My Dropbox\Projects\ScreenGrab\ScreenGrabber\obj\x86\Debug\ScreenGrabber.CaptureAreaForm.resources
 C:\My Dropbox\Projects\ScreenGrab\ScreenGrabber\obj\x86\Debug\ScreenGrabber.AreaSelectedEventArgs.resources
 C:\WorkSpaces\MyLocal\Visual Studio 2010\Projects\ScreenGrab\ScreenGrabber\obj\x86\Debug\ScreenGrabber.CaptureAreaForm.resources
-C:\WorkSpaces\MyLocal\Visual Studio 2010\Projects\ScreenGrab\ScreenGrabber\obj\x86\Debug\ScreenGrabber.AreaSelectedEventArgs.resources
